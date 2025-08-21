@@ -1,17 +1,20 @@
 // storage-adapter-import-placeholder
-import { postgresAdapter } from '@payloadcms/db-postgres'
-import { payloadCloudPlugin } from '@payloadcms/payload-cloud'
-import { lexicalEditor } from '@payloadcms/richtext-lexical'
-import path from 'path'
-import { buildConfig } from 'payload'
-import { fileURLToPath } from 'url'
-import sharp from 'sharp'
+import { postgresAdapter } from "@payloadcms/db-postgres";
+import { payloadCloudPlugin } from "@payloadcms/payload-cloud";
+import { lexicalEditor } from "@payloadcms/richtext-lexical";
 
-import { Users } from './collections/Users'
-import { Media } from './collections/Media'
+import path from "path";
+import { buildConfig } from "payload";
+import { fileURLToPath } from "url";
+import sharp from "sharp";
 
-const filename = fileURLToPath(import.meta.url)
-const dirname = path.dirname(filename)
+import { Users } from "./collections/Users";
+import { Media } from "./collections/Media";
+import { Banner } from "./collections/globals/Banner";
+import { About } from "./collections/globals/About";
+import { Hero } from "./collections/globals/Hero";
+const filename = fileURLToPath(import.meta.url);
+const dirname = path.dirname(filename);
 
 export default buildConfig({
   admin: {
@@ -21,14 +24,15 @@ export default buildConfig({
     },
   },
   collections: [Users, Media],
+  globals: [Banner, Hero, About],
   editor: lexicalEditor(),
-  secret: process.env.PAYLOAD_SECRET || '',
+  secret: process.env.PAYLOAD_SECRET || "",
   typescript: {
-    outputFile: path.resolve(dirname, 'payload-types.ts'),
+    outputFile: path.resolve(dirname, "payload-types.ts"),
   },
   db: postgresAdapter({
     pool: {
-      connectionString: process.env.DATABASE_URI || '',
+      connectionString: process.env.DATABASE_URI || "",
     },
   }),
   sharp,
@@ -36,4 +40,4 @@ export default buildConfig({
     payloadCloudPlugin(),
     // storage-adapter-placeholder
   ],
-})
+});
