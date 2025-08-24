@@ -55,7 +55,7 @@
   --popover-foreground: oklch(0.145 0 0);
   --primary: rgb(28, 76, 25);
   --primary-foreground: rgb(251, 232, 181);
-  --secondary: oklch(0.97 0 0);
+  --secondary: rgb(251, 232, 181);
   --secondary-foreground: oklch(0.205 0 0);
   --muted: oklch(0.97 0 0);
   --muted-foreground: oklch(0.556 0 0);
@@ -122,6 +122,12 @@
     @apply bg-background text-foreground;
   }
   h1 {
-    @apply font-heading text-3xl sm:text-4xl md:text-5xl;
+    @apply text-center font-heading text-5xl leading-16 text-primary-foreground sm:text-7xl sm:leading-20 md:text-8xl;
+  }
+  p {
+    @apply text-center font-body text-lg font-light text-primary-foreground;
+  }
+  .containerStyles {
+    @apply container mx-auto overflow-hidden px-4;
   }
 }
