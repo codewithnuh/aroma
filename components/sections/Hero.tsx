@@ -10,10 +10,10 @@ const Hero = () => {
           <h1>
             Life Begins <br /> After Coffee
           </h1>
-          <p className="mt-6">
+          <p className="mt-4">
             Because great coffee is start of something great
           </p>
-          <div className="mt-10 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-5">
+          <div className="mt-4 flex flex-col items-center justify-center space-y-4 sm:flex-row sm:space-y-0 sm:space-x-5">
             <Button
               variant={"default"}
               className="w-full bg-primary-foreground text-green-800 hover:cursor-pointer hover:bg-primary-foreground/90 hover:text-green-800 sm:w-auto"

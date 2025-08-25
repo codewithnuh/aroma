@@ -49,7 +49,7 @@ export default async function RootLayout(props: { children: React.ReactNode }) {
       lang="en"
       className={`${clsx(CalistogaFont.variable, DM_SansFont.variable)}`}
     >
-      <body className="overflow-hidden bg-primary">
+      <body className="overflow-x-hidden bg-primary">
         <div>
           <StickyBanner className="bg-gradient-to-b from-yellow-300 to-yellow-400">
             <p className="containerStyles mx-0 text-green-900 drop-shadow-md">
