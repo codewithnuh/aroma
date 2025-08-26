@@ -1,5 +1,7 @@
 import React from "react";
 import ItemCard, { products } from "../shared/ItemCard";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 const Products = () => {
   return (
@@ -15,6 +17,11 @@ const Products = () => {
           {products.map((item, index) => (
             <ItemCard key={index} item={item} />
           ))}
+        </div>
+        <div className="my-10 text-center">
+          <Button variant={"default"} asChild className="rounded-lg py-2">
+            <Link href={"/explore-menu"}>Explore Menu</Link>
+          </Button>
         </div>
       </div>
     </section>

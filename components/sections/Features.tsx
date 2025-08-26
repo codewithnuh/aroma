@@ -3,7 +3,7 @@ import React from "react";
 
 const Features = () => {
   return (
-    <section className="bg-secondary">
+    <section className="bg-gray-100">
       <div className="py-20">
         <h2>
           Find and Get <br /> What You Love
