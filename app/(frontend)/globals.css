@@ -131,6 +131,6 @@
     @apply text-center font-body font-light text-primary-foreground;
   }
   .containerStyles {
-    @apply container mx-auto overflow-hidden px-4;
+    @apply container mx-auto overflow-hidden px-1;
   }
 }
