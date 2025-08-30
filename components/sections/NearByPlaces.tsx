@@ -156,7 +156,7 @@ export default function NearbyCafesSection() {
 
         {/* Need Help Section */}
         <div className="mt-16 text-center">
-          <h3 className="mb-8 font-body text-2xl font-bold text-amber-100">
+          <h3 className="mb-8 font-heading text-2xl font-bold text-amber-100">
             Need Help?
           </h3>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -167,13 +167,13 @@ export default function NearbyCafesSection() {
               <p className="font-semibold text-amber-100">+1 (212) 555-0198</p>
             </div>
             <div className="rounded-xl border border-green-700 bg-green-800/50 p-4 backdrop-blur-sm">
-              <p className="mb-1 font-body text-xs font-medium text-amber-100">
+              <p className="mb-1 font-heading text-xs font-medium text-amber-100">
                 Customer Support
               </p>
               <p className="font-semibold text-amber-100">+1 (718) 555-0243</p>
             </div>
             <div className="rounded-xl border border-green-700 bg-green-800/50 p-4 backdrop-blur-sm">
-              <p className="mb-1 text-xs font-medium text-amber-100">
+              <p className="mb-1 font-heading text-xs font-medium text-amber-100">
                 General Email
               </p>
               <p className="font-body font-semibold text-amber-100">
@@ -181,7 +181,7 @@ export default function NearbyCafesSection() {
               </p>
             </div>
             <div className="rounded-xl border border-green-700 bg-green-800/50 p-4 backdrop-blur-sm">
-              <p className="mb-1 text-xs font-medium text-amber-100">
+              <p className="mb-1 font-heading text-xs font-medium text-amber-100">
                 Support Email
               </p>
               <p className="font-body font-semibold text-amber-100">
